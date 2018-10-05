@@ -107,7 +107,6 @@ li{
 
 .projects{
   padding: 100px;
-
 }
 
 .projects .title{
@@ -243,12 +242,31 @@ ul li{
   }
 }
 
+
 @media screen and (max-width: 970px) {
+
+  .bike{
+    order: -1;
+  }
+
+  .projects{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .resume{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .img-container{
     flex-direction: column;
     flex-wrap: nowrap;
   }
 
+}
+
+@media screen and (max-width: 340px) {
   .description{
     height: 350px;
   }
