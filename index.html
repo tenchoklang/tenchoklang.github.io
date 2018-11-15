@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/portfolio_icon.png">
+    <script type="text/javascript" src="assets/js/lib/jquery-3.2.1.js"></script>
 
   </head>
   <body>
@@ -17,8 +19,7 @@
       </h2>
 
       <nav>
-        <li> <a href="#"></a> Resume </li>
-        <li> <a href="#"></a> Projects </li>
+        <li> <a href="https://github.com/tenchoklang" target="_blank">Github</a></li>
       </nav>
     </header>
 
@@ -28,27 +29,28 @@
       <div class="summary">
         <h2>Tenzin Choklang</h2>
         <p>Aspiring Software Developer With a Special Interest In Web and Mobile Development</p>
-        <a href="#" class="button">Contact Me</a>
+        <div class="headshot-image" style="background-image: url('assets/img/headshot3.png');"></div>
+        <!-- <a href="#" class="button">Contact Me</a> -->
       </div>
     </section>
 
-    <section class="projects">
-      <div class="title">
-        <h2>My Personal Projects</h2>
+    <section class="mobile-projects">
+      <div class="projects--title">
+        <h2>My Mobile Projects</h2>
         <hr>
-        <p>Mobile, Web and Game Applications That I Have Worked On During My Free Time</p>
+        <p>Mobile and Game Applications That I Have Worked On During My Free Time</p>
       </div>
 
       <div class="img-container">
-        <div class="description small">
+        <div class="mobile-projects--description small">
           <i class="fa fa-rocket"></i>
           <span>
             Rocket Game
           </span>
           <p>A game that I made using Libgdx, that lets the user control a plane to avoid rockets </p>
-          <a href="https://github.com/tenchoklang" class="button">More Info</a>
+          <a href="https://github.com/tenchoklang" target="_blank" class="button">More Info</a>
         </div>
-        <div class="description large bike">
+        <div class="mobile-projects--description large bike">
           <i class="fa fa-bicycle"></i>
           <span>
             Bike App
@@ -57,9 +59,9 @@
             A Application that I made after I lost my bike. The goal of the App is to reduce the number of bikes lost in NYC.
             This is done in 4 steps. Precaution, Prevention, Recovery and Locate.
           </p>
-          <a href="projects/bikeApp.html" class="button">More Info</a>
+          <a href="projects/bikeApp.html" target="_blank" class="button">More Info</a>
         </div>
-        <div class="description large" >
+        <div class="mobile-projects--description large" >
           <i class="fa fa-newspaper-o"></i>
           <span>
             News App
@@ -68,16 +70,170 @@
             A Application that I made, after I had difficulty using my hands to eat and scrolling through the news at the same time.
             This App solves that problem by scrolling through the news automatically.
           </p>
-          <a href="https://github.com/tenchoklang" class="button">More Info</a>
+          <a href="https://github.com/tenchoklang"  target="_blank" class="button">More Info</a>
         </div>
-        <div class="description small">
+        <div class="mobile-projects--description small">
           <i class="fa fa-calendar"></i>
           <span>
             Calendar App
           </span>
           <p>A Application that I made that shows the academic Calendar for CUNY students. </p>
-          <a href="https://github.com/tenchoklang" class="button">More Info</a>
+          <a href="https://github.com/tenchoklang" target="_blank" class="button">More Info</a>
         </div>
+      </div>
+    </section>
+
+
+
+    <section class="web-projects">
+      <div class="projects--title">
+        <h2>My Web Projects</h2>
+        <hr>
+        <p>Web Applications That I Have Worked On During My Free Time</p>
+      </div>
+
+      <div class="web-project">
+        <div class="web-project--container">
+          <div class="web-project--image">
+            <img src="./assets/img/ExpenseApp_imac_right.png"/>
+          </div>
+          <div class="web-project--description">
+            <h2>Expenses App</h2>
+            <p>
+              A Web App build with React that allows users to log and keep track of their expenses. Uses everything from React-Redux to React-Router.
+              Also uses Firebase for user authentication and Realtime Database.
+            </p>
+            <a href="https://app-react-expenses.herokuapp.com/dashboard" target="_blank" class="button btn-mod">View App</a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="web-project">
+        <div class="web-project--container">
+          <div class="web-project--image">
+            <img src="./assets/img/newsApp_mac.png"/>
+          </div>
+          <div class="web-project--description">
+            <h2>World News</h2>
+            <p>
+              A Web version of my News App for Android using React. Allows users to read/search news from multiple outlets.
+              Mobile friendly and a unique layout for computer, tablet and mobile.
+            </p>
+            <a href="https://react-world-news.herokuapp.com/" target="_blank" class="button btn-mod">View App</a>
+
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <section>
+      <h1 class="skills-title">{ skills }</h1>
+
+      <div class="skills">
+        <div class="skills-container">
+          <div class="skills--header">
+            <img src="./assets/img/mobile.png"/>
+            <h2>MOBILE </h2>
+          </div>
+
+          <hr>
+
+          <div class="skills--list">
+            <ul>
+              <li>Java</li>
+              <li>SQLite</li>
+              <li>XML</li>
+              <li>Android Studio</li>
+              <li>Firebase</li>
+              <li>Google Maps</li>
+              <li>React Native (learning)</li>
+            </ul>
+
+            <h3>Tools</h3>
+            <ul>
+              <li>Material Design</li>
+            </ul>
+          </div>
+
+        </div>
+
+
+        <div class="skills-container">
+          <div class="skills--header">
+            <img src="./assets/img/web_dev.png"/>
+            <h2>WEB </h2>
+          </div>
+          <hr>
+
+          <div class="skills--list">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3 (FlexBox...)</li>
+              <li>JavaScript (ES6, ES7)</li>
+              <li>React (Redux, Router...)</li>
+              <li>D3 (learning)</li>
+              <li>SCSS</li>
+              <li>Firebase</li>
+              <li>jQuery</li>
+              <li>BootStrap</li>
+            </ul>
+
+            <h3>Tools</h3>
+            <ul>
+              <li>Webpack</li>
+              <li>Chrome Dev Tools</li>
+            </ul>
+          </div>
+
+        </div>
+
+
+        <div class="skills-container">
+          <div class="skills--header">
+            <img src="./assets/img/others.png"/>
+            <h2>OTHERS </h2>
+          </div>
+
+          <hr>
+
+          <div class="skills--list">
+            <ul>
+              <li>SQL</li>
+              <li>Python</li>
+
+            </ul>
+
+            <h3>Tools</h3>
+            <ul>
+              <li>Git</li>
+              <li>Github</li>
+              <li>SCRUM</li>
+              <li>Asana</li>
+              <li>Inkscape</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TO-DO LIST -->
+    <section class="todo-list">
+      <h1>FUTURE PLANS</h1>
+      <div class="todo-container">
+        <h1 class="title">TO-DO LIST <i class="fa fa-caret-up" aria-hidden="true"></i></h1>
+        <input class="add" type="text" placeholder="Add To-Do Here">
+        <hr>
+
+        <li class="todo-item"><span><i class="fa fa-trash" aria-hidden="true"></i></span> Learn Node js <i class="fa fa-check checkMark" aria-hidden="true"></i></li>
+        <li class="todo-item"><span><i class="fa fa-trash" aria-hidden="true"></i></span> Learn GraphQL <i class="fa fa-check checkMark" aria-hidden="true"></i></li>
+        <li class="todo-item"><span><i class="fa fa-trash" aria-hidden="true"></i></span> Learn React Native <i class="fa fa-check checkMark" aria-hidden="true"></i></li>
+
+
       </div>
     </section>
 
@@ -156,5 +312,8 @@
     <footer>
 
     </footer>
+
+    <script type="text/javascript" src="assets/js/app.js"></script>
+
   </body>
 </html>

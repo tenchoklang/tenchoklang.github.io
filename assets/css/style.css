@@ -25,9 +25,6 @@ header{
   color: white;
 }
 
-header h2{
-  font-family: Quicksand;
-}
 
 a{
   text-decoration: none;
@@ -40,9 +37,30 @@ nav{
   list-style: none;
 }
 
-li{
-  margin: 0 15px;
+nav li{
+  padding: 10px;
 }
+
+nav li:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 570px) {
+  header{
+    padding: 10px 20px;
+  }
+
+  header h2{
+    font-size: 14px;
+  }
+
+  nav li{
+    font-size: 12px;
+  }
+}
+
+
+
 
 /* SECTION */
 
@@ -71,8 +89,6 @@ li{
 .summary *{
   margin: 25px 0;
   font-size: 24px;
-  font-family: Quicksand;
-
 }
 
 .summary h2{
@@ -83,6 +99,24 @@ li{
   background-color: rgba(0, 0, 0, 0.5);
   width: 80%;
   margin: 25px auto;
+}
+
+.headshot-image{
+  width: 300px;
+  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+  background-size: contain;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 375px) {
+  .headshot-image{
+    width: 200px;
+    height: 200px;
+  }
 }
 
 
@@ -103,31 +137,31 @@ li{
   box-shadow: none;
 }
 
-/*PROJECTS*/
+/*MOBILE PROJECTS*/
 
-.projects{
+.mobile-projects{
   padding: 100px;
 }
 
-.projects .title{
+.projects--title{
   text-align: center;
   padding: 20px;
   font-size: 20px;
 }
 
-.title hr{
+.projects--title hr{
   width: 40%;
   margin: 10px auto;
   border-top: 1px solid #ccc;
 
 }
-.title h2{
+.projects--title h2{
   text-transform: capitalize;
   font: bold 32px Raleway;
   letter-spacing: 1px;
 }
 
-.title p{
+.projects--title p{
   color: #b0b0b0;
   font-family: Raleway;
   font-weight: bold;
@@ -142,7 +176,7 @@ li{
   width: 100%;
 }
 
-.description{
+.mobile-projects--description{
   height: 300px;
   padding: 20px;
   background-clip: content-box;
@@ -152,19 +186,18 @@ li{
 
 }
 
-.description span{
+.mobile-projects--description span{
   font-size: 20px;
   font-weight: bold;
 }
 
-.description p{
+.mobile-projects--description p{
   margin: 20px 20px;
 }
 
-.description a{
+.mobile-projects--description a{
   border-radius: 5px;
   text-transform: uppercase;
-  font-family: Quicksand;
   font-weight: bold;
   text-align: center;
   background-color: #3f51b5;
@@ -187,7 +220,7 @@ li{
 
 }
 
-.description i{
+.mobile-projects--description i{
   font-size: 50px;
   color: #ccdfcb;
   margin: 10px;
@@ -201,14 +234,278 @@ span{
   transition: all .35s ease-in-out;
 }
 
-.description:hover i{
+.mobile-projects--description:hover i{
   transform: translate(-50%, -50%) scale(1.5);
   color: #64ba99;
 }
 
-.description:hover{
+.mobile-projects--description:hover{
   border-radius: 50px;
 }
+
+
+
+
+
+
+/*WEB PROJECTS*/
+.web-projects{
+  padding: 0 120px;
+  background-color: #f3f3f3;
+}
+
+.web-project{
+  margin-bottom: 100px;
+}
+
+.web-projects .projects--title p{
+  color: black;
+}
+
+.web-project--container{
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+  .web-project--container{
+    flex-direction: column;
+  }
+
+  .web-project--image img{
+    width: 600px;
+    height: 600px;
+    max-width: 600px;
+    max-height: 600px;
+  }
+}
+
+.web-project--image img{
+  width: 600px;
+  height: 600px;
+  max-width: 600px;
+  max-height: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+.web-project--description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.web-project--description h2{
+  margin: 10px 0;
+}
+
+.btn-mod{
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 1050px) {
+  .web-project--image img{
+    width: 400px;
+    height: 400px;
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .web-projects{
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .web-project--image img{
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+
+
+/*SKILLS*/
+.skills-title{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.skills{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 100px 100px 100px;
+  color:black;
+}
+
+.skills hr{
+  margin: 10px;
+  width:150px;
+  margin: 10px auto;
+  border: 1px solid black;
+}
+
+.skills-container{
+  width: 280px;
+  height: 80vh;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid black;
+}
+
+.skills-container:hover .skills--header img{
+  transform: rotate(25deg);
+}
+
+.skills--header{
+  display: flex;
+  justify-content: center;
+}
+
+.skills--header img{
+  padding-right: 10px;
+}
+
+.skills--list{
+  padding: 10px;
+}
+
+
+
+/* TO-DO LIST */
+.todo-container li
+{
+	list-style-type: none;
+	width: 100%;
+	height: 10%;
+	text-align: left;
+	background-color: white;
+	line-height: 30px;
+  margin: 0;
+}
+
+
+.todo-container input{
+	width: 100%;
+	height: 40px;
+	border-style: none;
+	background-color: white;
+	box-shadow: 0 0 2px rgba(0,0,0,0.1);
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-family: sans-serif;
+	border-radius: 25px;
+	font-weight: normal;
+	box-sizing: border-box;
+  padding-left: 3%;
+
+}
+
+.todo-container input:focus{
+	color: steelblue;
+	border: 1px solid steelblue;
+	border-radius: 25px;
+	outline: none;
+}
+
+.todo-container hr{
+	margin: 0;
+	color: black;
+}
+
+.todo-container li span{
+	background-color: #e74c3c;
+	height: 100%;
+	margin-right: 7px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: all 0.3s;
+}
+
+.todo-container li:hover span{
+	width: 40px;
+	transition: all 0.3s;
+}
+
+
+.fa-caret-up{
+	float: right;
+	margin-right: 5%;
+}
+
+.fa-plus{
+	float: right;
+	margin-right: 5%;
+}
+
+.fa-trash{
+	color: white;
+}
+
+.fa-check{
+	float: right;
+	color:green;
+	margin-right: 15px;
+	margin-top: 6px;
+}
+
+.checkMark{
+	visibility: hidden;
+}
+
+.strike{
+	text-decoration: line-through;
+	color: gray;
+}
+
+.todo-container .title{
+	background-color: steelblue;
+	width: 100%;
+	height: 15%;
+	margin-bottom: 0%;
+	font-family: sans-serif;
+	color:white;
+	padding-top: 9px;
+	text-align: left;
+	padding-left: 3%;
+	font-weight: normal;
+}
+
+.todo-container{
+	background-color: #f7f7f7;
+	width: 300px;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin:0 auto;
+
+}
+
+.todo-list{
+  background-color: #c96265;
+  padding: 100px 0;
+}
+
+.todo-list > h1{
+  text-align: center;
+  padding: 50px;
+  font-size: 36px;
+  color: steelblue;
+  font-family: sans-serif;
+
+}
+
+
+
+
 
 
 /* RESUME */
@@ -249,7 +546,7 @@ ul li{
     order: -1;
   }
 
-  .projects{
+  .mobile-projects{
     padding-left: 0;
     padding-right: 0;
   }
@@ -264,10 +561,20 @@ ul li{
     flex-wrap: nowrap;
   }
 
+  .skills{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-container{
+    margin-bottom: 20px;
+    height: auto;
+  }
+
 }
 
-@media screen and (max-width: 340px) {
-  .description{
-    height: 350px;
+@media screen and (max-width: 375px) {
+  .mobile-projects--description{
+    height: 330px;
   }
 }
