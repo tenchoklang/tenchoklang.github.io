@@ -13,13 +13,13 @@ html{
 
 /* NAV BAR */
 header{
+  position: absolute;
   display:flex;
   justify-content: space-between;
   align-items:baseline;
   width: 100%;
-  background-color: #657caf;
 
-  padding: 10px 100px;
+  padding: 10px 100px 0;
   color: white;
 }
 
@@ -71,11 +71,6 @@ nav li:hover{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @supports (-webkit-appearance:none) {
-    .os-android & {
-      min-height: calc(100vh - 56px);
-    }
-  }
 
 }
 
