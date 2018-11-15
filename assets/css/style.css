@@ -71,6 +71,11 @@ nav li:hover{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @supports (-webkit-appearance:none) {
+    .os-android & {
+      min-height: calc(100vh - 56px);
+    }
+  }
 
 }
 
