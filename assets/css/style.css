@@ -202,7 +202,6 @@ nav li:hover{
   background-size: cover;
   background-position: center;
   color: white;
-
 }
 
 .mobile-projects--description span{
@@ -249,7 +248,7 @@ span{
   text-decoration: underline;
 }
 
-.img-container *{
+/* .img-container *{
   transition: all .35s ease-in-out;
 }
 
@@ -260,7 +259,7 @@ span{
 
 .mobile-projects--description:hover{
   border-radius: 50px;
-}
+} */
 
 
 

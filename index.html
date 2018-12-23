@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" href="assets/img/portfolio_icon.png">
     <script type="text/javascript" src="assets/js/lib/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   </head>
   <body>
 
-    <header>
+    <header data-aos="fade-in" data-aos-duration="1300">
       <h2>
         <a href="#">Tenzin Choklang</a>
       </h2>
@@ -26,7 +27,7 @@
     <section class="jumbotron">
       <div class="background-image" style="background-image: url('assets/img/mountain2.jpg');"> </div>
 
-      <div class="summary">
+      <div class="summary" data-aos="fade-up" data-aos-duration="1500">
         <h2>Tenzin Choklang</h2>
         <p>Aspiring Software Developer With a Special Interest In Web and Mobile Development</p>
         <div class="headshot-image" style="background-image: url('assets/img/headshot3.png');"></div>
@@ -35,14 +36,14 @@
     </section>
 
     <section class="mobile-projects">
-      <div class="projects--title">
+      <div class="projects--title" data-aos="fade-down" data-aos-duration="1000">
         <h2>My Mobile Projects</h2>
         <hr>
         <p>Mobile and Game Applications That I Have Worked On During My Free Time</p>
       </div>
 
       <div class="img-container">
-        <div class="mobile-projects--description small">
+        <div class="mobile-projects--description small" data-aos="fade-down-right" data-aos-duration="1000">
           <i class="fa fa-rocket"></i>
           <span>
             Rocket Game
@@ -50,7 +51,7 @@
           <p>A game that I made using Libgdx, that lets the user control a plane to avoid rockets </p>
           <a href="https://github.com/tenchoklang" target="_blank" class="button">More Info</a>
         </div>
-        <div class="mobile-projects--description large bike">
+        <div class="mobile-projects--description large bike" data-aos="fade-down-left" data-aos-duration="1000">
           <i class="fa fa-bicycle"></i>
           <span>
             Bike App
@@ -61,7 +62,7 @@
           </p>
           <a href="projects/bikeApp.html" target="_blank" class="button">More Info</a>
         </div>
-        <div class="mobile-projects--description large" >
+        <div class="mobile-projects--description large" data-aos="fade-up-right" >
           <i class="fa fa-newspaper-o"></i>
           <span>
             News App
@@ -72,7 +73,7 @@
           </p>
           <a href="https://github.com/tenchoklang"  target="_blank" class="button">More Info</a>
         </div>
-        <div class="mobile-projects--description small">
+        <div class="mobile-projects--description small" data-aos="fade-up-left">
           <i class="fa fa-calendar"></i>
           <span>
             Calendar App
@@ -94,10 +95,10 @@
 
       <div class="web-project">
         <div class="web-project--container">
-          <div class="web-project--image">
+          <div class="web-project--image" data-aos="zoom-in" data-aos-duration="1100">
             <img src="./assets/img/ExpenseApp_imac_right.png"/>
           </div>
-          <div class="web-project--description">
+          <div class="web-project--description" data-aos="fade-left">
             <h2>Expenses App</h2>
             <p>
               A Web App build with React that allows users to log and keep track of their expenses. Uses everything from React-Redux to React-Router.
@@ -111,10 +112,10 @@
 
       <div class="web-project">
         <div class="web-project--container">
-          <div class="web-project--image">
+          <div class="web-project--image" data-aos="zoom-in" data-aos-duration="1100">
             <img src="./assets/img/newsApp_mac.png"/>
           </div>
-          <div class="web-project--description">
+          <div class="web-project--description" data-aos="fade-left">
             <h2>World News</h2>
             <p>
               A Web version of my News App for Android using React. Allows users to read/search news from multiple outlets.
@@ -131,10 +132,10 @@
 
 
     <section>
-      <h1 class="skills-title">{ skills }</h1>
+      <h1 class="skills-title" data-aos="fade-down" data-aos-duration="1100">{ skills }</h1>
 
       <div class="skills">
-        <div class="skills-container">
+        <div class="skills-container" data-aos="flip-down" data-aos-duration="500">
           <div class="skills--header">
             <img src="./assets/img/mobile.png"/>
             <h2>MOBILE </h2>
@@ -142,7 +143,7 @@
 
           <hr>
 
-          <div class="skills--list">
+          <div class="skills--list" >
             <ul>
               <li>Java</li>
               <li>SQLite</li>
@@ -162,7 +163,7 @@
         </div>
 
 
-        <div class="skills-container">
+        <div class="skills-container" data-aos="flip-down" data-aos-duration="800">
           <div class="skills--header">
             <img src="./assets/img/web_dev.png"/>
             <h2>WEB </h2>
@@ -192,7 +193,7 @@
         </div>
 
 
-        <div class="skills-container">
+        <div class="skills-container" data-aos="flip-down" data-aos-duration="1100">
           <div class="skills--header">
             <img src="./assets/img/others.png"/>
             <h2>OTHERS </h2>
@@ -223,15 +224,15 @@
 
     <!-- TO-DO LIST -->
     <section class="todo-list">
-      <h1>FUTURE PLANS</h1>
-      <div class="todo-container">
+      <h1 data-aos="fade-in" data-aos-duration="700">FUTURE PLANS</h1>
+      <div class="todo-container" data-aos="fade-in" >
         <h1 class="title">TO-DO LIST <i class="fa fa-caret-up" aria-hidden="true"></i></h1>
         <input class="add" type="text" placeholder="Add To-Do Here">
         <hr>
 
-        <li class="todo-item"><span><i class="fa fa-trash" aria-hidden="true"></i></span> Learn Node js <i class="fa fa-check checkMark" aria-hidden="true"></i></li>
-        <li class="todo-item"><span><i class="fa fa-trash" aria-hidden="true"></i></span> Learn GraphQL <i class="fa fa-check checkMark" aria-hidden="true"></i></li>
-        <li class="todo-item"><span><i class="fa fa-trash" aria-hidden="true"></i></span> Learn React Native <i class="fa fa-check checkMark" aria-hidden="true"></i></li>
+        <li class="todo-item" data-aos="fade-right" data-aos-duration="700"><span><i class="fa fa-trash" aria-hidden="true" ></i></span> Learn Node js <i class="fa fa-check checkMark" aria-hidden="true"></i></li>
+        <li class="todo-item" data-aos="fade-left" data-aos-duration="700"><span><i class="fa fa-trash" aria-hidden="true"></i></span> Learn GraphQL <i class="fa fa-check checkMark" aria-hidden="true"></i></li>
+        <li class="todo-item" data-aos="fade-right" data-aos-duration="700"><span><i class="fa fa-trash" aria-hidden="true"></i></span> Learn React Native <i class="fa fa-check checkMark" aria-hidden="true"></i></li>
 
 
       </div>
@@ -314,6 +315,10 @@
     </footer>
 
     <script type="text/javascript" src="assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
   </body>
 </html>
